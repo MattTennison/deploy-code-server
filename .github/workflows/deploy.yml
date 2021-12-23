@@ -21,7 +21,7 @@ jobs:
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
         with:
-          args: "flyctl auth docker"
+          args: "auth docker"
 
       - name: Docker meta
         id: meta
