@@ -33,6 +33,7 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # COPY deploy-container/myTool /home/coder/myTool
 
 # -----------
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | sudo apt-get install -y nodejs build-essential
 
 # Port
 ENV PORT=8080
